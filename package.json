@@ -5,20 +5,25 @@
   "description": "React template for future react projects",
   "main": "index.js",
   "scripts": {
+    "start": "webpack-dev-server --mode development --config webpack.config.js --open",
+    "build": "webpack-dev-server --mode production --config webpack.config.js",
     "webpack-dev-server": "webpack-dev-server",
-    "dev": "webpack-dev-server --mode=development",
-    "prod": "webpack --mode=production"
+    "dev": "webpack-dev-server --mode development",
+    "prod": "webpack --mode production"
   },
   "keywords": [],
   "license": "ISC",
   "dependencies": {
     "css-loader": "^3.2.0",
+    "dotenv": "^8.1.0",
     "file-loader": "^4.2.0",
+    "history": "^4.9.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "style-loader": "^1.0.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.6.0",
     "@babel/core": "^7.5.5",
     "@babel/plugin-proposal-class-properties": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
